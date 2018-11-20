@@ -1,0 +1,32 @@
+/**
+ * Printable Template
+ */
+
+#printable {
+  width: 600px;
+  margin: 0 auto;
+  h2 {
+    margin-top: 12px;
+    &.siteheader {
+      color: #666;
+      margin-top: 0;
+    }
+  }
+  h3 {
+    color: #000;
+    margin: 12px 0;
+  }
+  .node .links, .comment .links, #tabs {
+    display: none;
+  }
+
+  ul, ol {margin: 0; padding: 0 0 1em 2em;}
+  ul {list-style: disc;}
+  ol {list-style: decimal;}
+
+  ol ol, ol ol ol, ul ul, ul ul ul {padding-top: 0; padding-bottom: 0;}
+
+  .item-list {
+    ul, ol {margin: 0; padding: 0 0 1em 0;}
+  }
+}

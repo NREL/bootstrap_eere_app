@@ -1,0 +1,46 @@
+/**
+ * Printable Template
+ */
+#printable {
+  width: 600px;
+  margin: 0 auto;
+}
+#printable h2 {
+  margin-top: 12px;
+}
+#printable h2.siteheader {
+  color: #666;
+  margin-top: 0;
+}
+#printable h3 {
+  color: #000;
+  margin: 12px 0;
+}
+#printable .node .links,
+#printable .comment .links,
+#printable #tabs {
+  display: none;
+}
+#printable ul,
+#printable ol {
+  margin: 0;
+  padding: 0 0 1em 2em;
+}
+#printable ul {
+  list-style: disc;
+}
+#printable ol {
+  list-style: decimal;
+}
+#printable ol ol,
+#printable ol ol ol,
+#printable ul ul,
+#printable ul ul ul {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#printable .item-list ul,
+#printable .item-list ol {
+  margin: 0;
+  padding: 0 0 1em 0;
+}
