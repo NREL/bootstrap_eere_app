@@ -15,7 +15,7 @@
  */
 function bootstrap_eere_app_preprocess_html(&$vars) {
   // Adding Font Awesome to Drupal Bootstrap subtheme.
-  $filepath = drupal_get_path('theme', 'bootstrap_eere_app') . '/font-awesome/css/font-awesome.min.css';
+  $filepath = libraries_get_path('font-awesome') . '/advanced-options/use-with-node-js/fontawesome-free/css/all.css';
   drupal_add_css($filepath, array(
     'group' => CSS_THEME,
   ));

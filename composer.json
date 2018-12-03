@@ -4,19 +4,57 @@
   "type": "drupal-theme",
   "license": "GPL-2.0",
   "homepage": "https://www.drupal.org/project/bootstrap",
-    "authors": [
-        {
-            "name": "Damon Haley (dhaley)",
-            "email": "damon.haley@nrel.gov",
-            "role": "Maintainer"
-        },
-        {
-            "name": "Shaun Laws (slaws)",
-            "email": "shaun.laws@nrel.gov",
-            "role": "Co-maintainer"
-        }
-    ],
+  "authors": [
+    {
+      "name": "Damon Haley (dhaley)",
+      "email": "damon.haley@nrel.gov",
+      "role": "Maintainer"
+    },
+    {
+      "name": "Shaun Laws (slaws)",
+      "email": "shaun.laws@nrel.gov",
+      "role": "Co-maintainer"
+    }
+  ],
   "support": {
-      "issues": "https://github.com/NREL/bootstrap_eere_app/issues"
+    "issues": "https://github.com/NREL/bootstrap_eere_app/issues"
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "bower-asset/font-awesome": "~5.5.0",
+    "drupal/bootstrap": "~3.21",
+    "bower-asset/bootstrap": "~3.3.7"
+  },
+  "repositories": {
+    "local" : {
+      "type": "composer",
+      "url": "http://packagist.test"
+    },
+    "drupal": {
+      "type": "composer",
+      "url": "https://packages.drupal.org/7"
+    },
+    "assets": {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  },
+  "extra": {
+    "installer-types": [
+      "bower-asset",
+      "npm-asset"
+    ],
+    "installer-paths": {
+      "web/sites/all/libraries/{$name}": [
+        "type:drupal-library",
+        "type:bower-asset",
+        "type:npm-asset",
+        "type:component"
+      ]
+    },
+    "composer-exit-on-patch-failure": true,
+    "patches": {
+    },
+    "enable-patching": true
   }
 }
