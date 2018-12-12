@@ -153,12 +153,12 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
-      <?php if ($breadcrumb): ?>
         <!-- BEGIN Breadcrumbs -->
         <div class="breadcrumbs">
+      <?php if ($breadcrumb): ?>
           <?php print $breadcrumb; ?>
-        </div>
       <?php endif; ?>
+        </div>
       <!-- END Breadcrumbs -->
       <?php if (isset($printable)): ?>
         <div class="printable">
