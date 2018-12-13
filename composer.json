@@ -19,17 +19,13 @@
   "support": {
     "issues": "https://github.com/NREL/bootstrap_eere_app/issues"
   },
-  "minimum-stability": "dev",
+  "minimum-stability": "alpha",
   "require": {
     "bower-asset/font-awesome": "~5.5.0",
-    "drupal/bootstrap": "~3.21",
+    "drupal/bootstrap": "~3.23",
     "bower-asset/bootstrap": "~3.3.7"
   },
   "repositories": {
-    "local" : {
-      "type": "composer",
-      "url": "http://packagist.test"
-    },
     "drupal": {
       "type": "composer",
       "url": "https://packages.drupal.org/7"

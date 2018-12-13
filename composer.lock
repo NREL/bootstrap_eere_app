@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0e18414f926cdb9388a96fc1f1cfa5d0",
+    "content-hash": "51fe064b67511d4d152bb8b7977293f7",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -65,11 +65,17 @@
         },
         {
             "name": "drupal/bootstrap",
-            "version": "dev-3.x",
+            "version": "3.23.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/bootstrap",
-                "reference": "fcdfc46ad10c84f8e1bc9a0fb1937e2eb97cae2f"
+                "reference": "7.x-3.23"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap-7.x-3.23.zip",
+                "reference": "7.x-3.23",
+                "shasum": "2d52bdf353801a05d374d4274bcf6180d90e80c7"
             },
             "require": {
                 "drupal/drupal": "~7.0"
@@ -80,11 +86,11 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "7.x-3.21+3-dev",
-                    "datestamp": "1542004980",
+                    "version": "7.x-3.23",
+                    "datestamp": "1548102180",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -120,16 +126,21 @@
                 "docs": "https://drupal-bootstrap.org",
                 "issues": "https://www.drupal.org/project/issues/bootstrap",
                 "irc": "irc://irc.freenode.org/drupal-bootstrap"
-            },
-            "time": "2018-11-12T06:40:01+00:00"
+            }
         },
         {
             "name": "drupal/drupal",
-            "version": "dev-7.x",
+            "version": "7.63.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/drupal",
-                "reference": "9f0d39e9ae79ef419feb90bbf76131a0e645556a"
+                "reference": "7.63"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/drupal-7.63.zip",
+                "reference": "7.63",
+                "shasum": "c85cfa730e69f4566db64328cf5a573b9c46f9f9"
             },
             "type": "drupal-core",
             "extra": {
@@ -137,11 +148,11 @@
                     "dev-7.x": "7.x-dev"
                 },
                 "drupal": {
-                    "version": "7.61+1-dev",
-                    "datestamp": "1541683380",
+                    "version": "7.63",
+                    "datestamp": "1547869298",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -222,13 +233,12 @@
             "homepage": "https://www.drupal.org/project/drupal",
             "support": {
                 "source": "http://cgit.drupalcode.org/drupal"
-            },
-            "time": "2018-11-08T13:20:18+00:00"
+            }
         }
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "alpha",
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
