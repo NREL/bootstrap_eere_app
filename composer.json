@@ -22,7 +22,6 @@
   "minimum-stability": "alpha",
   "require": {
     "bower-asset/font-awesome": "~5.5.0",
-    "drupal/bootstrap": "~3.23",
     "bower-asset/bootstrap": "~3.3.7"
   },
   "repositories": {
