@@ -98,8 +98,8 @@
                 <span>
                   <img src="<?php print $logo; ?>" alt="" usemap="#logo" class="banner-logo">
                   <map name="logo">
-                    <area shape="rect" coords="1,1,198,20" href="http://www.energy.gov" alt="Energy.gov">
-                    <area shape="rect" coords="2,22,198,75" href="https://energy.gov/eere/office-energy-efficiency-renewable-energy" alt="Office of Energy Efficiency and Renewable Energy">
+                    <area shape="rect" coords="1,1,198,20" href="https://www.energy.gov" alt="Energy.gov">
+                    <area shape="rect" coords="2,22,198,75" href="https://www.energy.gov/eere/office-energy-efficiency-renewable-energy" alt="Office of Energy Efficiency and Renewable Energy">
                   </map>
                 </span>
               <?php endif; ?>
@@ -221,12 +221,20 @@
   <?php if (!empty($page['footer'])): ?>
     <?php print render($page['footer']); ?>
   <?php else: ?>
-    <p class="footer-tagline"><?php print $site_name; ?> is a resource of the U.S. Department of Energy's <?php print $office; ?>.</p>
-    <p class="footer-links">
-      <a href="<?php print $contact_link; ?>">Contact Us</a> |
-      <a href="<?php print $office_link; ?>"><?php print $office; ?></a> |
-      <a href="http://energy.gov/eere">Office of Energy Efficiency &amp; Renewable Energy</a>
-    </p>
+      <p class="footer-tagline"><?php print $site_name; ?> is a resource of the U.S. Department of Energy's <?php print $office; ?>.</p>
+      <p class="footer-links">
+          <a href="<?php print $contact_link; ?>">Contact Us</a> |
+          <a href="<?php print $office_link; ?>"><?php print $office; ?></a> |
+          <a href="https://www.energy.gov/eere/office-energy-efficiency-renewable-energy">Office of Energy Efficiency &amp; Renewable Energy</a>
+        <?php global $base_path, $base_url;
+        if (!user_is_logged_in()): ?>
+          <?php if (module_exists('eere_mfa')): ?>
+                | <a href="<?php print $base_url . '/mfa/login';?>">Log In</a>
+          <?php else: ?>
+                | <a href="<?php print $base_url . '/user/login';?>">Log In</a>
+          <?php endif; ?>
+        <?php endif; ?>
+      </p>
   <?php endif; ?>
 </footer>
 <!--startindex-->
