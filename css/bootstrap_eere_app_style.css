@@ -13695,15 +13695,9 @@ div.printable {
  *  Font Awesome
  **************************************************/
 /*  Toggle style on collapse */
-div.collapsed .fa-minus-square-o:before {
-  content: "\f147";
+a > .fa-minus-square:before {
+  content: "\f146";
 }
-.collapsed .fa-plus-square-o:before {
-  content: "\f147";
-}
-a.collapsed > .fa-minus-square-o:before {
-  content: "\f196";
-}
-a.collapsed > .fa-plus-square-o:before {
-  content: "\f147";
+a.collapsed > .fa-minus-square:before {
+  content: "\f0fe";
 }

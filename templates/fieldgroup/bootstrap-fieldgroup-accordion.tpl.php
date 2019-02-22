@@ -30,9 +30,9 @@
             <h4 class="panel-title">
               <a data-toggle="collapse" data-parent="#<?php print $id; ?>" href="#<?php print $panel['id'] ?>-<?php print $index; ?>">
                 <?php if ($panels[$index]['collapse'] == 'collapse in') : ?>
-                  <i class="fa fa-minus-square"></i>
+                    <i class="far fa-minus-square"></i>
                 <?php else: ?>
-                  <i class="fa fa-plus-square"></i>
+                    <i class="far fa-plus-square"></i>
                 <?php endif; ?>
                 <?php print $panel['label']; ?>
               </a>
