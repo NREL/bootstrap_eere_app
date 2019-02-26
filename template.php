@@ -16,7 +16,7 @@ function bootstrap_eere_app_css_alter(&$css) {
 
 function bootstrap_eere_app_preprocess_select_as_checkboxes_fieldset(&$vars) {
   // Prepend font awesome plus to filter header.
-  $vars['element']['#bef_title'] = '<i class="fa fa-minus-square"></i> ' . $vars['element']['#bef_title'];
+  $vars['element']['#bef_title'] = '<i class="far fa-minus-square"></i> ' . $vars['element']['#bef_title'];
   // Add the id as a class to the fieldset content. This was the only way that I
   // could find to identify the panel and use that in determining which filters
   // are currently being used, so that they can be left open on page load @see
