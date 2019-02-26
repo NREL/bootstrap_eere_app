@@ -17,8 +17,10 @@ function bootstrap_eere_app_preprocess_bootstrap_panel(array &$variables) {
     if (is_array($parameter)) {
       $str = '<div class="edit-' . str_replace('_', '-', $parameter_id);
       if (0 === strpos($variables['content'], $str)) {
-        unset($variables['body_attributes']['class'][1]);
-        $variables['collapsed'] = FALSE;
+        if (!empty($parameter)) {
+          $variables['body_attributes']['class'][2] = 'in';
+          $variables['collapsed'] = FALSE;
+        }
       }
     }
   }
