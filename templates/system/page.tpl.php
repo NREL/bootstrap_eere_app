@@ -229,9 +229,9 @@
         <?php global $base_path, $base_url;
         if (!user_is_logged_in()): ?>
           <?php if (module_exists('eere_mfa')): ?>
-                | <a href="<?php print $base_url . '/mfa/login';?>">Log In</a>
+                | <a href="<?php print $base_url . '/mfa/login';?>">Admin Log In</a>
           <?php else: ?>
-                | <a href="<?php print $base_url . '/user/login';?>">Log In</a>
+                | <a href="<?php print $base_url . '/user/login';?>">Admin Log In</a>
           <?php endif; ?>
         <?php endif; ?>
       </p>
