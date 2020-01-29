@@ -6,13 +6,13 @@
   "homepage": "https://www.drupal.org/project/bootstrap",
   "authors": [
     {
-      "name": "Damon Haley (dhaley)",
-      "email": "damon.haley@nrel.gov",
+      "name": "Shaun Laws (slaws)",
+      "email": "shaun.laws@nrel.gov",
       "role": "Maintainer"
     },
     {
-      "name": "Shaun Laws (slaws)",
-      "email": "shaun.laws@nrel.gov",
+      "name": "Christian Modern (cmodern)",
+      "email": "christian.modern@nrel.gov",
       "role": "Co-maintainer"
     }
   ],
@@ -22,8 +22,7 @@
   "minimum-stability": "alpha",
   "require": {
     "bower-asset/font-awesome": "~5.5.0",
-      "bower-asset/bootstrap": "~3.3.7",
-      "nrel/eere_app_custom": "dev-master"
+    "nrel/eere_app_custom": "dev-master"
   },
   "repositories": {
     "drupal": {
