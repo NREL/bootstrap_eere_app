@@ -235,6 +235,15 @@
           <?php endif; ?>
         <?php endif; ?>
       </p>
+      <p class="footer-links">
+          <a href="https://www.energy.gov/about-us/web-policies">Web Policies</a> |
+          <a href="https://www.energy.gov/about-us/web-policies/privacy">Privacy</a> |
+          <a href="https://www.energy.gov/diversity/services/protecting-civil-rights/no-fear-act">No Fear Act</a> |
+          <a href="https://www.energy.gov/whistleblower-protection-and-nondisclosure-agreements">Whistleblower Protection</a> |
+          <a href="https://www.energy.gov/cio/department-energy-information-quality-guidelines">Information Quality</a> |
+          <a href="https://www.energy.gov/open-government">Open Gov</a> |
+          <a href="https://www.energy.gov/cio/office-chief-information-officer/services/assistive-technology/accessibility-standard-statement">Accessibility</a>
+      </p>
   <?php endif; ?>
 </footer>
 <!--startindex-->
